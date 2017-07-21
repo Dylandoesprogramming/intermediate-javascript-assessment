@@ -7,34 +7,34 @@
 
 // Given the following nested functions:
 
-function daBears(){
-  var isFurry = true;
+function daBears() {
+    var isaFurry = true;
 
-  function papaBear (){
-    var porridge = "Too Hot!";
-    var chair = "Too Big!";
-    var bed = "Too Hard!";
-    var feeling = "Angry";
+    function papaBear() {
+        var porridge = "Too Hot!";
+        var chair = "Too Big!";
+        var bed = "Too Hard!";
+        var feeling = "Angry";
 
-    function mamaBear(){
-      var porridge = "Too Cold!";
-      var bed = "Too Soft!";
+        function mamaBear() {
+            var porridge = "Too Cold!";
+            var bed = "Too Soft!";
 
-      function babyBear(){
-        var porridge = "Just right!";
-        var chair = "Just right!";
-        var bed = "Just right!";
-        var feeling = "Whiny";
-        var sleepy = "Very yes";
-      }
+            function babyBear() {
+                var porridge = "Just right!";
+                var chair = "Just right!";
+                var bed = "Just right!";
+                var feeling = "Whiny";
+                var sleepy = "Very yes";
+            }
+        }
     }
-  }
 
-  function goldilocks(){
-    var feeling = "Hungry";
-    var isFurry = false;
-    var isDinner = true;
-  }
+    function goldilocks() {
+        var feeling = "Hungry";
+        var isFurry = false;
+        var isDinner = true;
+    }
 }
 
 // Remove entries from the following arrays until only correct answers remain.

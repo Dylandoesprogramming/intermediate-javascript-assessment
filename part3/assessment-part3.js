@@ -14,8 +14,11 @@
 
 // CODE HERE...
 function callBinding(magicAnimals, updateAnimal, id) {
-    id = id - 1;
-    return updateAnimal.call(magicAnimals[id], 'Trogdor');
+    for (var i = 0; i < magicAnimals.length; i++) {
+        if (magicAnimals[i]['id'] === id) {
+            return updateAnimal.call(magicAnimals[i], 'Trogdor');
+        }
+    }
 }
 
 
@@ -33,8 +36,11 @@ function callBinding(magicAnimals, updateAnimal, id) {
 // CODE HERE...
 
 function applyBinding(magicAnimals, updateAnimal, id) {
-    id -= 1;
-    return updateAnimal.apply(magicAnimals[id], ['being majestic', 'eating rainbows']);
+    for (var i = 0; i < magicAnimals.length; i++) {
+        if (magicAnimals[i]['id'] === id) {
+            return updateAnimal.apply(magicAnimals[i], ['being majestic', 'eating rainbows']);
+        }
+    }
 }
 
 
